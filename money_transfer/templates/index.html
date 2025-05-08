@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money to Kenya | Fast Transfers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="transfer-card">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="/static/images/kenya-flag.png" alt="Send to Kenya" class="flag-icon">
+                    <h1>Send to Kenya</h1>
+                </div>
+                <p class="subtitle">Fast, secure money transfers with low fees</p>
+                <div class="exchange-rate-badge">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>1 USD = 128 KES</span>
+                </div>
+            </div>
+            
+            <div class="transfer-form">
+                <div class="form-group">
+                    <label for="amount">Amount to Send</label>
+                    <div class="input-group">
+                        <span class="currency">$</span>
+                        <input type="number" id="amount" placeholder="100" min="1" step="0.01">
+                    </div>
+                </div>
+                
+                <button id="calculate-btn" class="btn calculate-btn">
+                    <i class="fas fa-calculator"></i> Calculate Transfer
+                </button>
+                
+                <div class="results" id="results">
+                    <div class="result-card">
+                        <div class="result-row">
+                            <span>Transfer Fee (2%)</span>
+                            <span id="fee-amount">$0.00</span>
+                        </div>
+                        <div class="result-row">
+                            <span>Total Amount</span>
+                            <span id="total-amount">$0.00</span>
+                        </div>
+                        <div class="result-row highlight">
+                            <span>Recipient Receives</span>
+                            <span id="receiving-amount" class="kes-amount">KES 0.00</span>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button id="proceed-btn" class="btn primary-btn">
+                                <i class="fas fa-paper-plane"></i> Send Money Now
+                            </button>
+                            <button id="cancel-btn" class="btn secondary-btn">
+                                <i class="fas fa-times"></i> Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Instant Delivery</h3>
+                    <p>Money arrives in minutes</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Your money is always safe</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Low Fees</h3>
+                    <p>Only 2% transfer fee</p>
+                </div>
+            </div>
+            
+            <div class="payment-methods">
+                <p>We support:</p>
+                <div class="methods">
+                    <div class="method">
+                        <i class="fab fa-cc-visa"></i>
+                        <span>Visa</span>
+                    </div>
+                    <div class="method">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <span>Mastercard</span>
+                    </div>
+                    <div class="method">
+                        <img src="/static/images/mpesa.png" alt="M-Pesa">
+                        <span>M-Pesa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
